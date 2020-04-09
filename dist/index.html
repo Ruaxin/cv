@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+</head>
+<style media="print">body {
+        margin: 0;
+    }
+
+    #skills {
+        display: none;
+    }</style>
+<style>* {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #eee;
+        margin: 20px 0;
+    }
+
+    article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+    }
+
+    strong {
+        font-weight: normal;
+    }
+
+    p {
+        margin: .3em 0;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+        font-weight: normal;
+    }
+
+    ol {
+        list-style: none;
+    }
+
+    a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+        color: #666;
+    }</style>
+<style>.bio {
+        position: relative;
+    }
+
+    .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .projects p {
+        color: #666;
+    }
+
+    .projects strong {
+        color: #f60;
+    }
+
+    .projects>ol {
+        list-style-position: inside;
+        padding: 0;
+        margin: 0;
+    }
+
+    .projects>ol>li {
+        margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+        display: inline-block;
+    }
+
+    #skills {
+        width: 500px;
+        height: 270px;
+    }
+
+    .skills>.wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+        margin-right: 24px;
+    }
+
+    .skills>.wrapper>ul {
+        color: #666;
+    }
+
+    .skills>.wrapper strong {
+        color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .jobs header {
+        display: flex;
+        color: #666;
+    }
+
+    .jobs header>h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .jobs header>h4 {
+        margin-left: 1em;
+        font-size: 18px;
+    }
+
+    .jobs header>span {
+        font-size: 18px;
+        margin-left: auto;
+    }
+
+    .jobs>ul>li {
+        margin: 12px 0;
+    }</style>
+<style>@media (max-width: 500px) {
+        body {
+            margin: 0;
+        }
+
+        article {
+            width: auto;
+            height: auto;
+            margin: 0;
+        }
+
+        .bio img {
+            display: none;
+        }
+
+        .skills .wrapper {
+            flex-direction: column;
+        }
+
+        #skills {
+            width: auto;
+        }
+
+        .jobs header {
+            flex-direction: column;
+        }
+
+        .jobs header>h3,
+        .jobs header>h4,
+        .jobs header>span {
+            margin: 0;
+        }
+
+        .jobs>header>span {
+            font-size: 16px;
+        }
+    }</style>
+
+<body>
+    <article>
+        <section class="bio">
+            <h1>忻勤逸</h1>
+            <img src="/IMG_20200402_0915262.73d0f81f.png" alt="" width="100" height="100">
+            <p>
+                男 | 24岁 | 应聘Web前端开发 | 宁波
+            </p>
+            <p>
+                手机：18268613139 | 微信：Sothoth666 | 邮箱：qy.xin@foxmail.com
+            </p>
+        </section>
+
+        <section>
+            <h2>教育经历</h2>
+            <p>
+                <span><time>2014年</time>~<time>2018年</time></span>
+                辽宁科技大学 应用物理 本科
+            </p>
+        </section>
+        <section class="skills">
+            <h2>技能</h2>
+            <div class="wrapper">
+                <div id="skills"></div>
+                <ul>
+                    <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
+                    <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+                    <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                    <li>熟练掌握 <strong>React全家桶</strong>的使用，包括 create-react-app、ReactRouter、Redux 等</li>
+                    <li>熟悉 <strong>ES6</strong>，包括 let / Promise / await / 析构赋值</li>
+                    <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+                    <li>了解 <strong>Webpack 的配置和优化</strong></li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects">
+            <h2>开源项目</h2>
+            <ol>
+                <li>
+                    <header>
+                        <h3>极简记账</h3>
+                        <span>
+                            <a href="https://github.com/Ruaxin/mark-money-v">源码链接</a>
+                            <a href="http://ruaxin.xyz/mmv-website/">项目预览</a>
+                        </span>
+                    </header>
+                    <p>
+                        一个基于 <strong>Vue全家桶</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+                    </p>
+
+                    <p>
+                        这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账。
+                        而且可以通过账单查看自己的消费习惯。
+                    </p>
+                    <p>
+                        该项目使用 <strong>VueRouter</strong>，让我对 Vue 有了深刻的理解和应用。
+                    </p>
+                </li>
+                <li class="page2">
+                    <header>
+                        <h3>狗头人UI</h3>
+                        <span>
+                            <a href="https://github.com/Ruaxin/rua-ui">源码链接</a>
+                            <a href="http://ruaxin.xyz/rua-ui/">项目预览</a>
+                        </span>
+                    </header>
+                    <p>这是我参考 Element UI 和 Ant Design
+                        等UI库，自己学习做的一个简易<strong>UI组件库</strong>。目前有Button，Tabs，Input，Grid，Layout，Toast，Popover7个组件。每个组件均经历从需求分析到<strong>Mocha
+                            单元测试</strong>，并用 <strong>TravisCI 实现持续集成</strong>，最终以 <strong>VuePress
+                        </strong>为基础制作官方文档，发布于 <strong>npmjs.org</strong>。完成该项目使我对
+                        Vue组件化等常用特征更加熟悉，同时提升了自己对前端工程化流程以及单元测试重要性的深刻理解。</p>
+                </li>
+            </ol>
+        </section>
+        <section class="jobs">
+            <h2>工作经历</h2>
+            <header>
+                <h3> 宁波中普检测技术服务有限公司 </h3>
+                <h4>无机化学工程师</h4>
+                <span class="time">
+                    <time>2018年7月</time>~<time>2019年11月</time>
+                </span>
+            </header>
+            <ul>
+                <li>
+                    负责无机部门RoHS项目和reach项目的工作
+                </li>
+                <li>
+                    独立负责处理无机部分的实验和项目报告的编写
+                </li>
+            </ul>
+        </section>
+        <section class="others">
+            <h2>其他链接</h2>
+            <ul>
+                <li><a href="http://ruaxin.xyz/">我的博客</a>，目前已有 15 篇技术文章</li>
+                <li><a href="https://github.com/Ruaxin">我的 GitHub</a>，过去半年都有在提交</li>
+            </ul>
+        </section>
+    </article>
+    <script src="https://cdn.bootcss.com/echarts/4.7.0/echarts.min.js"></script>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+
+</html>
